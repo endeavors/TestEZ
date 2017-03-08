@@ -9,3 +9,4 @@ TestEZ is a flashcard Android application that makes studying for classes fun an
 - Vincente Ocampo (Full Stack Developer)
 - Faress Nemanti (Back End Developer)
 - Daniel Sung (Back End Developer)
+

@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context="com.cards.flash.testez.MainActivity$EditCardFragment"
+    android:background="#d9d8d8"
+    android:id="@+id/mainRelLayout">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="0dp"
+        android:padding="-5dp"
+        android:showDividers="none"
+        android:background="#1c81ce"
+        android:elevation="4dp"
+        android:id="@+id/linearLayout">
+        <Button
+            style="@style/DefaultButton"
+            android:id="@+id/quiz_button"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Quiz"
+            android:textColor="#ffffff"
+            android:background="#00ffffff" />
+        <Button
+            style="@style/DefaultButton"
+            android:id="@+id/practice_button"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Practice"
+            android:textColor="#ffffff"
+            android:background="#00ffffff" />
+        <Button
+            style="@style/DefaultButton"
+            android:id="@+id/invite_button"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Invite"
+            android:textColor="#ffffff"
+            android:background="#00ffffff" />
+        <Button
+            style="@style/DefaultButton"
+            android:id="@+id/scores_button"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Scores"
+            android:textColor="#ffffff"
+            android:background="#00ffffff" />
+    </LinearLayout>
+    <TextView
+        android:id="@id/android:empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="10dp"
+        android:text="NO CARDS"
+        android:gravity="center"
+
+        android:layout_below="@+id/linearLayout"
+        android:padding="0dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:textColor="#000000"
+        android:textSize="28dp"
+        android:typeface="sans" />
+    <ListView
+        android:id="@+id/android:list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:descendantFocusability="afterDescendants"
+        android:focusable="false"
+
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:dividerHeight="8dp"
+        android:divider="#d9d8d8"
+        />
+</RelativeLayout>
